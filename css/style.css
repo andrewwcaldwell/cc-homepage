@@ -1,0 +1,159 @@
+/**
+ * Element styles.
+ */
+body {
+	margin: 0;
+	color: #90172a;
+	font-family: 'Helvetica', Arial, Sans-serif;
+}
+
+/* Green section at the top that contains the logo and navigation. */
+header {
+	height: 80px;
+	padding: 20px 15% 0 15%;
+	background-color: #B1d4cd;
+}
+
+header nav {
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+}
+
+header li {
+	display: inline-block;
+	text-transform: uppercase;
+
+	margin: 2%;
+}
+
+header li:hover {
+	border-bottom: 2px solid white;
+}
+
+header a {
+	text-decoration: none;
+	color: #90172a;
+}
+
+/* Green section at the bottom that contains contact information and the interactive donut. */
+footer {
+	background-color: #B1d4cd;
+}
+
+footer div {
+	display: inline-block;
+	padding: 50px 0;
+	vertical-align: top;
+}
+
+footer ul {
+	padding: 0px;
+}
+
+footer li {
+	list-style-type: none;
+}
+
+footer h3 {
+	margin-bottom: 10px;
+}
+
+footer p {
+	margin: 5px 0 5px 0;
+}
+
+/* Button styling. */
+footer button {
+	background-color: #CF6480;
+	width: 170px;
+	height: 50px;
+
+	color: white;
+	font-family: 'Helvetica', Arial, Sans-serif;
+	font-size: 1.1em;
+	text-transform: uppercase;
+
+	border-radius: 5px;
+	border-width: 0px;
+
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 10px;
+}
+
+/* Pseudo-class for the button element that changes the button background and cursor style when hovered. */
+footer button:hover {
+	background-color: #90172a;
+	cursor: pointer;
+}
+
+footer #sprinkles-img {
+	z-index: 0;
+
+	position: absolute;
+	bottom: 55px;
+
+	display: none;
+}
+
+/**
+ * Class styles, both for layouts in this case.
+ */
+.col-1 {
+	padding-left: 12%;
+	width: 42%;
+
+	display: inline-block;
+}
+
+.col-2 {
+	padding-left: 5%;
+	width: 20%;
+
+	display: inline-block;
+}
+
+/**
+ * ID styles.
+ */
+
+/* Hero banner. */
+#hero {
+	background: url('../images/doughnuts.jpg') fixed;
+	background-size: cover;
+
+	padding: 110px;
+	margin: 0;
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Primary content section of the site. */
+#content {
+	padding: 100px 0;
+}
+
+#content h2 {
+	font-style: italic;
+}
+
+#content div {
+	vertical-align: top;
+	line-height: 1.5em;
+	margin: 0 auto;
+}
+
+#content figure {
+	display: inline-block;
+	vertical-align: top;
+
+	margin: 0;
+}
+
+#content figcaption {
+	text-align: center;
+	font-weight: bold;
+	margin-top: 5px;
+}

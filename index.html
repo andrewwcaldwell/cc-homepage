@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Doughknot Shop</title>
+        <!-- This <link> tag references another file that should be retrieved by the web browser in
+             order to display this document correctly. In this case it's a CSS file. -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<!-- 
+            Contains navigation and the logo. The <header> and <nav> tags aren't strictly necessary
+            but are a good practice for describing the semantic meaning of elements on your site. I 
+            mentioned semantics quite a bit during our class; look up "semantic HTML" online for a
+            bunch of opinionated articles (both in favor and against!) about the value of semantic
+            HTML.
+
+            In my humble opinion, designing websites using semantic HTML is the right path for 
+            future-proofing your designs. It's *not* worth stressing out about whether you should be
+            using a <header>, <div>, <section>, etc for a long time but if there's an obvious semantic
+            tag that's more specific that a standard <div>, go for it.
+        -->
+		<header>
+			<img src="images/logo.png">
+			<nav>
+				<ul>
+					<li><a href="#content">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- "Hero" banner with title. We use the "background" CSS property here to style the background along
+             with some padding. -->
+		<div id="hero">
+			<h1>Le Doughknot Shoppe</h1>
+		</div>
+		<!-- Main content section. As discussed, #content is a block-level element, and the .col-1 and .col-2 div's
+             nested inside of it are inline-block's. #content occupies the full horizontal space of the document, and
+             the columns fit beside each other horizontally. -->
+		<div id="content">
+			<div class="col-1">
+                <!-- All of these elements in .col-1 are block-level. -->
+				<h2>Why knot eat here?</h2>
+				<p>We believe that life comes full circle when indulging oneself with a world-famous doughnut from Le DoughKnot Shoppe. Whether you are craving a light morning snack, just finished a triathalon, or spilt coffee all over those new white pants, our doughknots are sure to put a smile on your face. All of our indulgent knots are hand-crafted by our classically trained doughknottiers.</p>
+				<p>Whether you want a raspberry jelly-filled doughknot with bacon glaze, a coconut sprinkle pistachio knot, or our most popular chocolate bourbon doughknot topped with fried pecans, we got what you want! Add a little sprinkle to your life with our endless flavor combinations sure to delight the inner doughknot connosseiur in you.</p>
+			</div>
+            <!-- 
+                A figure, like <header>, <footer>, and <nav>, is another grouping element that usually contains
+                an image and a caption. More info here: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure.
+                In class we used a <div>, but <figure> is more semantically correct. Ultimately not a huge deal if you
+                use one or the other. 
+            -->
+			<figure class="col-2">
+				<img src="images/variety.jpg">
+				<figcaption>A "hole" new world.</figcaption>
+			</figure>
+		</div>
+		<!-- Contact information and the Giant Doughnut. <footer> is another grouping element and is block-level. -->
+		<footer id="contact">
+			<div class="col-1">
+				<h2>Contact us</h2>
+                <!-- We define this as a list but it could also be a bunch of <div>'s. From a structural perspective 
+                     (HTML's job), this is a list of contact info, even though it's not technically a bulleted list from 
+                     a visual perspective (that part is CSS's job). -->
+				<ul>
+					<li>
+						<h3>Call us</h3>
+						<p>1 (800) WHY-KNOT</p>
+					</li>
+					<li>
+						<h3>Email us</h3>
+						<p>jellyfilled@ledoughknotshoppe.com</p>
+					</li>
+					<li>
+						<h3>Stop on by</h3>
+						<p>808 Glazed Circle</p>
+						<p>Knotsville, NC 8008</p>
+					</li>
+				</ul>
+			</div>
+			<div class="col-2" style="position:relative;">
+				<button id="sprinkles">Add sprinkles</button>
+				<img src="images/footer-doughnut.png">
+				<img id="sprinkles-img" src="images/sprinkles.png">
+			</div>
+		</footer>
+
+		<!-- 
+            We didn't cover this in class, but this is a small taste of some Javascript that make the
+            button actually do something. You can read this code as: 
+                "Find the element with an ID of 'sprinkles.' Any time that someone clicks on that element,
+                change the display type of the element with ID 'sprinkles-img' to 'block' instead of 'none.'"
+            The #sprinkles-img image starts off being invisible (display: none) but this code makes it
+            visible when the button is pressed. If you're interested in learning more about Javascript,
+            come to one of our Javascript crash courses! There are also a ton of online courses and online
+            walkthroughs.
+        -->
+		<script type="text/javascript">
+			var sprinkles = document.getElementById('sprinkles');
+			sprinkles.addEventListener('click', function() {
+				document.getElementById('sprinkles-img').style.display = "block";
+			});
+		</script>
+	</body>
+</html>
