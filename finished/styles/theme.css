@@ -1,60 +1,149 @@
+/**
+ * This sheet is very similar to how we left off, but I've added a few sections and
+ * rearranged others. Naming should all be consistent unless I indicate with comments
+ * in the HTML file (which only happens in a couple of places). There shouldn't be too
+ * many new properties here; most were ones we went over in class; a few exceptions:
+ * 
+ *    line-height       how tall each line of text should be (pixels, percent, etc)
+ *    color             the color of TEXT
+ *    font-family       what font text should appear in
+ *    cursor            what happens to the mouse when it hovers over an element
+ *    border-radius     rounded corners on an element
+ *
+ * If you need a refresher on what a property means or want to learn some new properties,
+ * Mozilla's got a great source of everything there is to know.
+ * 
+ *    https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+ *
+ * Google will also be your friend for this!
+ */
+
 body {
-	margin: 0;
+    margin: 0;
+    /**
+     * Set the font family (what font to use) and the text color, both of which
+     * are consistent throughout the document and can therefore be applied at the
+     * <body> level.
+     *
+     * I provide three different font families here, even though only one can be used.
+     * This is so that browsers can fall back to second and third best options if earlier
+     * options aren't available.
+     */
+    color: #90172a;
+    font-family: 'Helvetica', Arial, Sans-serif;
 }
 
 header {
-	background-color: #B1d4cd;
-	padding: 1%;
-	padding-left: 15%;
-}
-
-.col-1 {
-	display: inline-block;
-	width: 40%;
-
-	margin-left: 5%;
-}
-
-.col-2 {
-	display: inline-block;
-	width: 40%;
-
-	margin-left: 6%;
-}
-
-nav {
-	display: inline-block;
-	width: 80%;
-	vertical-align: middle;
-}
-
-header img {
-	vertical-align: middle;
-}
-
-#hero {
-	background-image: url(../images/doughnuts.jpg);
-	background-attachment: fixed;
-	background-size: cover;
-}
-
-#hero h1 {
-	text-align: center;
-	padding-top: 10%;
-	padding-bottom: 10%;
-}
-
-#content {
-	background-color: white;
-	padding-top: 5%;
-	padding-bottom: 5%;
-}
-
-footer {
-	background-color: #B1d4cd;
+    background-color: #B1d4cd;
+    padding: 1%;
+    padding-left: 15%;
 }
 
 li {
-	list-style-type: none;
-	display: inline-block;
-	width: 10%;
+    list-style-type: none;
+    display: inline-block;
+    width: 10%;
+}
+
+header li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #90172a;
+}
+
+header img {
+    vertical-align: middle;
+}
+
+.col-1 {
+    display: inline-block;
+    width: 40%;
+    margin-left: 10%;
+    vertical-align: top;
+}
+
+.col-2 {
+    display: inline-block;
+    margin-left: 10%;
+    vertical-align: top;
+}
+
+nav {
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle;
+}
+
+#hero {
+    background-image: url(../images/doughnuts.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#hero h1 {
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin: 0;
+    font-size: 72px;
+}
+
+#content {
+    background-color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#content h2 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#content figure {
+    margin: 0;
+    /* 
+     * Making the figure inline block means that the width will be the smallest area possible
+     * by default (unless we set it, which we aren't). It also means that we can center text;
+     * centering text isn't allowed on inline elements since they're always "centered" (the
+     * element can only be as wide as the children inside of it so there's no wiggle room on
+     * either side!).
+     */
+    display: inline-block;
+    text-align: center;
+}
+
+#content figcaption {
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+#content p {
+    line-height: 1.5em;
+}
+
+footer {
+    background-color: #B1d4cd;
+    padding: 5% 0 5% 0;
+}
+
+button {
+    display: block;
+    /**
+     * An "auto" margin can be used to set 'automatic' margins on the left and
+     * right side, which centers an element in a block. In this case, we're centering the
+     * button in the second column of our footer.
+     */
+    margin: 0 auto 2% auto;
+    /**
+     * All of these properties are visual flair for the otherwise drab looking button.
+     */
+    text-transform: uppercase;
+    padding: 5%;
+    font-size: 1.2em;
+    background-color: #CF6480;
+    color: white;
+    border-radius: 4px;
+    border-width: 0;
+    cursor: pointer;
+}
