@@ -1,0 +1,84 @@
+header {
+    background-color: #B1d4cd;
+}
+
+body {
+    margin: 0px;
+    color: #90172a;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: block;
+    margin: 0px;
+}
+
+#hero {
+    background: url('images/doughnuts.jpg') fixed;
+    background-size: cover;
+}
+
+.navigation {}
+
+.header-item {
+    margin: 20px;
+    padding: 0px;
+    height: 60px;
+}
+
+nav {
+    vertical-align: top;
+    font-family: Helvetica, Arial, Sans-serif;
+    font-size: 12px;
+}
+
+ul {
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    padding-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #90172a;
+}
+
+nav,
+ul,
+li {
+    display: inline-block;
+}
+
+.col1,
+.col2 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.col1 {
+    width: 40%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.col2 {
+    width: 40%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 5px;
+}
