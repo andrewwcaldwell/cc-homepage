@@ -30,7 +30,7 @@ footer {
 
 
 
-/** CHAINING ELEMENT SELECTORS **/
+/** CHAINING ON ELEMENT SELECTORS **/
 
 header li a {
     text-transform: uppercase;
@@ -60,6 +60,7 @@ header img {
 }
 
 /** ID SELECTORS **/
+
 #hero {
     background-image: url(images/doughnuts.jpg);
     background-attachment: fixed;
