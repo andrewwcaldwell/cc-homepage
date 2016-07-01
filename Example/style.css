@@ -1,0 +1,93 @@
+h1 {
+    color: blue;
+    font-size: 50px;
+}
+
+h2 {
+    color: darkred;
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+ul {
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+p {
+    font-size: 20px;
+}
+
+img {
+    display: inline-block;
+}
+
+nav {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80%;
+}
+header {
+    margin: 0px;
+    border: 1px solid blue;
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    height: 100px;
+    
+}
+
+body {
+    padding: 0px;
+}
+
+#hero {
+    background-image: url(images/doughnuts.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+#hero h1 {
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin: 0;
+    font-size: 72px;
+}
+.theme {
+    background-color: lightcoral;
+    border: 2px solid cyan;
+    margin: 10px;
+}
+.col-1 {
+    /*display: inline-block;*/
+    width: 40%;
+    /*margin-left: 10%;
+    vertical-align: top;*/
+}
+
+.col-2 {
+    display: inline-block;
+    margin-left: 10%;
+    vertical-align: top;
+}
+.split {
+    display: inline-block;
+    margin-left: 10%;
+    vertical-align: top;
+    
+}
+
+.contact {
+    padding: 5%
+}
